@@ -14,21 +14,40 @@
 
     <ol>
         <li>Do I like food?</li>
-        <li>How many kids do I have?</li>
-        <li>Whats my favorite season?</li>
+        <li>Do I have kids?</li>
+        <li>Do I like spiders?</li>
+        <li>Is Winter my favorite season?</li>
+        <li>Am I 100 years old?</li>
     </ol>
     
     <script>
-        var userName = prompt('Welcom to my site about me, what\'s your name?');
+        'use strict';
 
-        var food = prompt('Do I like food?');
-        if(food === 'yes' || food ==='ya'){
+        var userName = prompt('Welcome to my site about me, what\'s your name?');            //Asking for the visitors name
+        console.log('Dope name friend: ' + userName + '.');
+
+        var food = prompt('Do I like food?');           // Checking your knowledge of what keeps me alive
+        console.log('I hope that this is the right answer: ' + food);
+        food = food.toUpperCase();
+        if(food === 'YES' || food === 'YA' || food === 'YUP' || food === 'SI'){
             alert('You bet I love food, its\'s the BEST!');
-        } else if(food === 'no'){
-            alert('You dont know me\:\(');
+        } else if(food === 'NO' || food === 'NOPE'){
+            alert('You dont know me \:\(');
         }else {
-            alert('You need to anser this, it\s important.');
+            alert('You need to answer this, it\'s important.');
         }
+
+        var kids = prompt('Do I have any childern?');               //Asking for a yes or no on my little ones
+        console.log('This is my family we are talking about, I hope you get this right: ' + kids);
+        kids = kids.toUpperCase();
+        if(kids === 'YES' || kids === 'YA' || kids === 'YUP' || kids === 'SI'){
+            alert('Totaly, I have 3 little ones and the oldest just started kindergarten');
+        } else if(kids === 'NO' || kids === 'NOPE'){
+            alert('That would be false my so-called-friend.');
+        }else {
+            alert('You need to answer this, it\'s important.');
+        }
+
     </script>
 </body>
 </html>
