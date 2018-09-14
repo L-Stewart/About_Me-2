@@ -2,10 +2,19 @@
     background-color: orange
 }
 
-body {
-    text-align: center
+h1 {
+    text-align: center;
+    border-style: solid;
+    width: 20%;
+    margin: auto;
 }
 
-h1 {
-    color: green
+h3 {
+    text-align: center;
+}
+
+div {
+    border-style: solid;
+    width: 15%;
+    margin: auto;
 }
