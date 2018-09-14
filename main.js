@@ -63,3 +63,24 @@ if(age === 'NO' || age === 'NOPE' || age === 'NEVER' || age === 'NADA' || age ==
   alert('You need to answer this, it\'s important.');
 }
 
+//Number game
+alert('We are going to play a fun and challenging number guessing game. You need to guess a number between 0 and 10.');
+var randomNum = Math.floor((Math.random() * 10) +1);
+console.log(randomNum);
+
+var guess = prompt('Guess a number now please. Remember its between 0 and 10.');
+var guessInt = parseInt(guess)
+for(var i = 0; i < 3; i++){
+  if(guessInt === randomNum){
+    alert('That is correct, GREAT JOB!');
+    break;
+  }else if(guessInt > randomNum){
+    guessInt = prompt('Thats high lets try again.');
+    guessInt = parseInt(guessInt);
+    console.log('high: ' + guessInt);
+  }else{
+    guessInt = prompt('Thats low lets try again.');
+    guessInt = parseInt(guessInt);
+    console.log('Low: ' + guessInt);
+  }
+}
