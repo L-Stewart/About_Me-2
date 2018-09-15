@@ -131,7 +131,6 @@ var randomNumber = function(){
   }
 };
 
-
 randomNumber();
 
 //Guessing game with an arrey of pets I have had
