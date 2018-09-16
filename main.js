@@ -100,7 +100,7 @@ var randomNumber = function(){
   var randomNum = Math.floor((Math.random() * 10) +1);
   console.log(randomNum);
 
-  var attempts = 0
+  var attempts = 0;
   var guess = prompt('Guess a number now please. Remember its between 0 and 10.');
   var guessInt = parseInt(guess);
 
@@ -124,7 +124,6 @@ var randomNumber = function(){
     alert('Good try. Maybe next time!');
   }
 };
-
 
 //Guessing game with an arrey of pets I have had
 var animals = function(){
@@ -157,13 +156,25 @@ var animals = function(){
   }
 };
 
-// userName();
-// nomnom();
-// brats();
-// eightLegs();
-// cold();
-// babyFace();
-randomNumber();
+// var questions = [userName, nomNom, brats, eightLegs, cold, babyFace];
+// var runThru = 0;
+// for(runThru; runThru <= questions.length; runThru++){
+//   if()
+// }
+
+
+var questions = [userName, nomNom, brats, eightLegs, cold, babyFace];
+var myFunction = function(){
+  for(var i = 0; i < questions.length; i++){
+    questions.forEach[i];
+  }
+};
+questions.forEach(myFunction);
+
+
+console.log(questions);
+
+//randomNumber();
 // animals();
 alert('You got ' + correct + ' out of 7 questions correct');
 console.log('correct: ' + correct);
