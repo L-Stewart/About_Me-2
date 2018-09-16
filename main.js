@@ -164,12 +164,13 @@ var animals = function(){
 
 
 var questions = [userName, nomNom, brats, eightLegs, cold, babyFace];
-var myFunction = function(){
-  for(var i = 0; i < questions.length; i++){
-    questions.forEach[i];
+var runThru = 0;
+for(var i = 0; i <= questions.length; i++){
+  if(runThru <= questions.length && runThru === i){
+    var yesNo = questions[i];
+    yesNo();
   }
-};
-questions.forEach(myFunction);
+}
 
 
 console.log(questions);
