@@ -168,6 +168,7 @@ var runThru = 0;
 for(var i = 0; i <= questions.length; i++){
   if(runThru <= questions.length && runThru === i){
     var yesNo = questions[i];
+    runThru++;
     yesNo();
   }
 }
