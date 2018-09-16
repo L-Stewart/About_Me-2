@@ -2,6 +2,7 @@
 var correct = 0;
 var incorrect = 0;
 
+//Asking for the visitors name
 var userName = function(){
   var userName = prompt('Hello visitor, welcome to my site about me. Please tell me your name.');
   console.log(userName);
@@ -9,7 +10,7 @@ var userName = function(){
 };
 
 // Checking your knowledge of what keeps me alive: answer is yes
-var nomnom = function(){
+var nomNom = function(){
   var food = prompt('Do I like food?');
   console.log('Do I like food: ' + food);
   food = food.toUpperCase();
@@ -93,8 +94,9 @@ var babyFace = function(){
   }
 };
 
+//Random number guessing game
 var randomNumber = function(){
-  alert('We are going to play a fun and challenging number guessing game. You need to guess a number between 0 and 10.');
+  alert('We are going to play a fun and challenging number guessing game. You need to guess a number between 1 and 10.');
   var randomNum = Math.floor((Math.random() * 10) +1);
   console.log(randomNum);
 
