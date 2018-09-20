@@ -106,70 +106,70 @@ var babyFace = function(){
   }
 };
 
-// //Random number guessing game
-// var randomNumber = function(){
-//   alert('We are going to play a fun and challenging number guessing game. You need to guess a number between 1 and 10.');
-//   var randomNum = Math.floor((Math.random() * 10) +1);
-//   console.log(randomNum);
+//Random number guessing game
+var randomNumber = function(){
+  alert('We are going to play a fun and challenging number guessing game. You need to guess a number between 1 and 10.');
+  var randomNum = Math.floor((Math.random() * 10) +1);
+  console.log(randomNum);
 
-//   var attempts = 0;
-//   var guess = prompt('Guess a number now please. Remember its between 0 and 10.');
-//   var guessInt = parseInt(guess);
+  var attempts = 0;
+  var guess = prompt('Guess a number now please. Remember its between 0 and 10.');
+  var guessInt = parseInt(guess);
 
-//   for(attempts = 0; attempts < 3; attempts++){
-//     if(guessInt === randomNum){
-//       correct++;
-//       alert('That is correct, GREAT JOB!');
-//       break;
-//     }else if(guessInt > randomNum){
-//       guessInt = prompt('Thats high lets try again.');
-//       guessInt = parseInt(guessInt);
-//       //console.log(guessInt);
-//     }else if(guessInt < randomNum){
-//       guessInt = prompt('Thats low lets try again.');
-//       guessInt = parseInt(guessInt);
-//       //console.log(guessInt);
-//     }
-//   }
-//   if(attempts === 3){
-//     incorrect++;
-//     alert('Good try. Maybe next time!');
-//   }
-// };
+  for(attempts = 0; attempts < 3; attempts++){
+    if(guessInt === randomNum){
+      correct++;
+      alert('That is correct, GREAT JOB!');
+      break;
+    }else if(guessInt > randomNum){
+      guessInt = prompt('Thats high lets try again.');
+      guessInt = parseInt(guessInt);
+      //console.log(guessInt);
+    }else if(guessInt < randomNum){
+      guessInt = prompt('Thats low lets try again.');
+      guessInt = parseInt(guessInt);
+      //console.log(guessInt);
+    }
+  }
+  if(attempts === 3){
+    incorrect++;
+    alert('Good try. Maybe next time!');
+  }
+};
 
-// //Guessing game with an arrey of pets I have had
-// var animals = function(){
-//   var pets = ['dog', 'cat', 'rabbit', 'gecko', 'frog'];
-//   var attempts = 6;
-//   var answer = false;
-//   console.log(pets);
-//   console.log(attempts);
+//Guessing game with an arrey of pets I have had
+var animals = function(){
+  var pets = ['dog', 'cat', 'rabbit', 'gecko', 'frog'];
+  var attempts = 6;
+  var answer = false;
+  console.log(pets);
+  console.log(attempts);
 
-//   alert('For this last game you are going to guess one try at a time the different types of pets I have had in my life. Starting.... NOW!');
+  alert('For this last game you are going to guess one try at a time the different types of pets I have had in my life. Starting.... NOW!');
 
-//   while(attempts > 0 && answer === false){
-//     var petGuess = prompt('You have ' + attempts + ' left to try and get a right answer.');
+  while(attempts > 0 && answer === false){
+    var petGuess = prompt('You have ' + attempts + ' left to try and get a right answer.');
 
-//     if(pets.includes(petGuess)){
-//       correct++;
-//       alert('That is correct, I have had Dogs, Cats, Rabbits, Gecko\'s, and Frogs as pets too.');
-//       answer = true;
-//       break;
+    if(pets.includes(petGuess)){
+      correct++;
+      alert('That is correct, I have had Dogs, Cats, Rabbits, Gecko\'s, and Frogs as pets too.');
+      answer = true;
+      break;
 
-//     } else {
-//       attempts--;
-//       alert('That is not one of the pets that I have had. You have ' + attempts + ' left to try and get a right answer.');
-//     }
-//   }
+    } else {
+      attempts--;
+      alert('That is not one of the pets that I have had. You have ' + attempts + ' left to try and get a right answer.');
+    }
+  }
 
-//   if (attempts === 0){
-//     incorrect++;
-//     alert('Nice try but you have run out of guesses. I have had ' + pets + 'as pets.');
-//   }
-// };
+  if (attempts === 0){
+    incorrect++;
+    alert('Nice try but you have run out of guesses. I have had ' + pets + 'as pets.');
+  }
+};
 
 //Array that runs through the yes/no questions
-var questions = [userName, nomNom, brats, eightLegs, cold, babyFace];
+var questions = [userName, nomNom, brats, eightLegs, cold, babyFace, randomNumber, animals];
 var i = 0, length = questions.length;
 for(i; i < length; i++){
   var runThru = questions[i];
