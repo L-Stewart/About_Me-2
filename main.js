@@ -6,8 +6,9 @@ var input = [];
 //Asking for the visitors name
 var userName = function(){
   var userName = prompt('Hello visitor, welcome to my site about me. Please tell me your name.');
-  console.log(userName);
-  input.push(userName);
+  //console.log(userName + '\'s answers:');
+  document.getElementById('guestName').innerHTML = userName + '\'s answers:';
+
   alert('Hello ' + userName + ' , I\'m going to ask you some Yes or No questions about myself. Have fun!');
 };
 
@@ -15,8 +16,8 @@ var userName = function(){
 var nomNom = function(){
   var food = prompt('Do I like food?');
   console.log('Do I like food: ' + food);
-  input.push(food);
   food = food.toUpperCase();
+  document.getElementById('food').innerHTML = 'Do I like food: ' + food;
 
   if(food === 'YES' || food === 'YA' || food === 'YUP' || food === 'SI' || food === 'Y'){
     correct++;
@@ -34,9 +35,9 @@ var nomNom = function(){
 var brats = function(){
   var kids = prompt('Do I have any children?');
   console.log('Do I have kids: ' + kids);
-  input.push(kids);
-
   kids = kids.toUpperCase();
+  document.getElementById('kids').innerHTML = 'Do I have kids: ' + kids;
+
   if(kids === 'YES' || kids === 'YA' || kids === 'YUP' || kids === 'SI' || kids === 'Y'){
     correct++;
     alert('Totally, I have 3 little ones and the oldest just started kindergarten');
@@ -53,9 +54,9 @@ var brats = function(){
 var eightLegs = function(){
   var spiders = prompt('Do I think that spiders are cool?');
   console.log('Do I like spiders:' + spiders);
-  input.push(spiders);
-
   spiders = spiders.toUpperCase();
+  document.getElementById('eightLegs').innerHTML = 'Do I like Spiders: ' + spiders;
+
   if(spiders === 'NO' || spiders === 'NOPE' || spiders === 'NEVER' || spiders === 'NADA' || spiders ==='N'){
     correct++;
     alert('If I see them they are fine its what happens when they ninja out of site thats the problem. Well done.');
@@ -72,9 +73,9 @@ var eightLegs = function(){
 var cold = function(){
   var season = prompt('Could winter be considered my favorite season?');
   console.log('Is winter my favorite season: ' + season);
-  input.push(season);
-
   season = season.toUpperCase();
+  document.getElementById('winter').innerHTML = 'Is winter my favorite season: ' + season;
+
   if(season === 'YES' || season === 'YA' || season === 'YUP' || season === 'SI' || season === 'Y'){
     correct++;
     alert('I love everything about winter.');
@@ -91,9 +92,9 @@ var cold = function(){
 var babyFace = function(){
   var age = prompt('Would you say that I am 100 years old?');
   console.log('Am I 100 years old:' + age);
-  input.push(age);
-
   age = age.toUpperCase();
+  document.getElementById('100').innerHTML = 'Am I 100 years old: ' + age;
+  
   if(age === 'NO' || age === 'NOPE' || age === 'NEVER' || age === 'NADA' || age === 'N'){
     correct++;
     alert('That would be a safe guess, also thats correct.');
@@ -155,7 +156,7 @@ var animals = function(){
 
     if(pets.includes(petGuess)){
       correct++;
-      alert('That is correct, I have had Dogs, Cats, Rabbits, Gecko\'s, and Frogs as pets too.');
+      alert('That is correct, I have had Dogs, Cats, Rabbits, Geckos, and Frogs as pets too.');
       answer = true;
       break;
 
