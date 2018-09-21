@@ -1,8 +1,8 @@
 html {
-    background-color: orange;
-    width: 940px;
+    background-color: lightgray;
+    width: 960px;
     height: 100%;
-    margin: 0%;
+    margin: 20%;
     border: 0%;
     padding: 0%;
 }
@@ -14,20 +14,28 @@ h1 {
     margin: auto;
 }
 
+img.family {
+    float: left;
+    display: block;
+    border-style: solid;
+}
+
 h3 {
     text-align: center;
 }
 
 #myAnswers {
-    display: inline-block;
+    float: right;
+    display: block;
     border-style: solid;
-    width: 33%;
+    width: 30%;
 }
 
 #guestAnswers {
     display: inline-block;
     border-style: solid;
-    width: 33%;
+    width: 30%;
+    margin: 3%;
 }
 
 #topTen {
