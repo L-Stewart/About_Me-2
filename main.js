@@ -7,7 +7,7 @@ var input = [];
 var userName = function(){
   var userName = prompt('Hello visitor, welcome to my site about me. Please tell me your name.');
   //console.log(userName + '\'s answers:');
-  document.getElementById('guestName').innerHTML = userName + '\'s answers:';
+  document.getElementById('guestName').innerHTML = userName + '\'s Answers:';
 
   alert('Hello ' + userName + ' , I\'m going to ask you some Yes or No questions about myself. Have fun!');
 };

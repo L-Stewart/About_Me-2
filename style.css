@@ -2,38 +2,38 @@ html {
     background-color: lightgray;
     width: 960px;
     height: 100%;
-    margin: 20%;
-    border: 0%;
-    padding: 0%;
+    margin-left: 20%;
+    margin-right: 20%
 }
 
 h1 {
     text-align: center;
     border-style: solid;
     width: 50%;
-    margin: auto;
+    margin-top: 10%;
 }
 
 img.family {
     float: left;
-    display: block;
-    border-style: solid;
+    display: inline-block;
+    border-style: hidden;
+    margin-top: 3%;
 }
 
 h3 {
-    text-align: center;
+    text-align: left;
+    margin-left: 10%;
 }
 
 #myAnswers {
-    float: right;
-    display: block;
-    border-style: solid;
+    display: inline-block;
+    border-style: hidden;
     width: 30%;
 }
 
 #guestAnswers {
     display: inline-block;
-    border-style: solid;
+    border-style: hidden;
     width: 30%;
     margin: 3%;
 }
